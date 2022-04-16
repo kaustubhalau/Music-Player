@@ -1,0 +1,372 @@
+body{
+    background-color: #0c1027;
+    margin: 0px 70px;
+    padding: 0px;
+    
+}
+main{
+    margin-top: 10px;
+    width: 80%;
+}
+#main-div{
+    display: flex;
+    
+}
+
+/*----------------------Header--------------------------*/
+#headerDiv-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+#headerInnerDiv_one{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+#headerInnerDiv_two{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    height: 29px;
+    
+}
+#headerInnerDiv_one i,span{
+    color: white;
+}
+#headerInnerDiv_one i{
+    font-size: 2rem;
+}
+#headerInnerDiv_one div{
+    display: flex;
+}
+
+#headerInnerDiv_two img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    
+}
+#headerInnerDiv_two i{
+    color: white;
+    margin-top: 1px;
+}
+#headerThird-icon i{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#search-icons{
+    background-color:#12193e ;
+    border-radius: 1rem;
+    padding: 0px 7px;
+    
+}
+#headerInnerDiv_two input{
+    background-color: #12193e;
+    border: 0px;
+    width: 20rem;
+    padding: 0px;
+    
+}
+input:focus{
+    outline: none;
+}
+
+#search-icons i{
+    margin-top: 10px;
+    color:white;
+}
+
+/*------------------------Main-------------------*/
+main{
+    width: 70%;
+}
+
+[type=radio]{
+    display: none;
+}
+
+#slider{
+    height: 50vh;
+    width: 70vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+#slider img{
+    height: 100%;
+    width: 100%;
+    /* object-fit:cover; */
+}
+#slider label{
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: 0.4s ease ;
+    
+}
+
+#s1:checked ~ #slide4,  #s2:checked ~ #slide5,
+#s3:checked ~ #slide1,  #s4:checked ~ #slide2,
+#s5:checked ~ #slide3{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(-30%,0,-200px);
+}
+
+#s1:checked ~ #slide5,  #s2:checked ~ #slide1,
+#s3:checked ~ #slide2,  #s4:checked ~ #slide3,
+#s5:checked ~ #slide4{
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0, 0, 0, .2) ;
+    transform: translate3d(-15%,0,-100px);
+}
+
+#s1:checked ~ #slide1,  #s2:checked ~ #slide2,
+#s3:checked ~ #slide2,  #s4:checked ~ #slide4,
+#s5:checked ~ #slide5{
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+    transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2,  #s2:checked ~ #slide3,
+#s3:checked ~ #slide3,  #s4:checked ~ #slide5,
+#s5:checked ~ #slide1{
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0, 0, 0, .2) ;
+    transform: translate3d(15%,0,-100px);
+}
+
+#s1:checked ~ #slide3,  #s2:checked ~ #slide4,
+#s3:checked ~ #slide5,  #s4:checked ~ #slide1,
+#s5:checked ~ #slide2{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(30%,0,-200px);
+}
+
+/*-----------------------Latest Releases------------------*/
+h3{
+    color: white;
+}
+#latest-releases{
+    margin-top: 68px;
+}
+
+.latest-releases{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.latest-release-songs{
+    display: flex;
+    margin-bottom: 10px;
+    
+
+    
+}
+.latest-release-image img{
+    height: 100px;
+    width: 100px;
+
+}
+.latest-release-info{
+    margin-left: 40px;
+    margin-top: 10px;
+
+}
+.latest-release-info .name-white{
+    color: bisque;
+}
+.latest-release-info .date-grey{
+    color: grey;
+}
+/*-----------------------Popular Artist-------------------------------*/
+
+.popular-artist-face{
+    display:flex;  
+    justify-content: space-between; 
+}
+
+.border-radius div img{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.popular-artist-face div p{
+    color: white;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+/*-------------------------Juke Box----------------------------*/
+
+.juke-box-outter-div{
+    background-color: #101642;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.juke-box-outter-div div p{
+    text-align: center;
+    color: white;
+    margin-top: -4rem;
+}
+.juke-box-outter-div div img{
+    object-fit: cover;
+}
+
+/*------------------------ Three Square Options of Music----------------------*/
+.three-squares-music{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 1.8rem;
+}
+.three-squares-music div img{
+    height: 190px;
+    width: 275px;
+    object-fit: contain;
+}
+.three-squares-music div p{
+    text-align: center;
+    font-size: larger;
+    margin-top: -6rem;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/*---------------Latest Hindi Songs---------------------*/
+
+#latest-englishSongs{
+    margin-top: 5rem;
+    background-color: #030725;
+}
+.outter-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.8rem;
+}
+
+.outter-div div img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.outter-div div p{
+    color: bisque;
+}
+
+/*-----------------Latest Hindi Songs------------------*/
+.outter-div div p{
+   margin-top: 2px;
+   text-align: center;   
+}
+#latest-hindiSongs{
+    background-color: #030725;
+}
+
+/*-----------------------Aside-----------------------*/
+aside{
+    width: 100%;
+    margin-left: 1rem;
+}
+#heading{
+    display: flex;
+    justify-content: space-between;
+}
+h5{
+    color: aqua;
+    margin-bottom: 3rem;
+
+}
+.aside-songList{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.aside-songList img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+
+}
+.list-numbers{
+    color: bisque;
+    margin-top: 9px;
+}
+.song-name{
+    margin-left: 1rem;
+    color:bisque;
+}
+.heart i{
+    margin-left: 10rem;
+    margin-top: 9px;
+    color: bisque;
+    
+}
+.heart i:visited{
+    background-color:red ;
+}
+.heart i:hover{
+    color: red;
+}
+.heart i:active{
+    background-color: red;
+}
+
+/*---------------------------------------Music Player---------------------------*/
+
+#music-background{
+    margin-top: 6rem;
+}
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color:rgb(41, 38, 35);
+     color:rgb(0, 0, 0);
+     
+    }
+
+   
+
+#outter-div{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    background-color: rgb(41, 36, 36);
+    bottom: 0;
+    position: fixed;
+}
+#outter-div div i{
+    color: bisque;
+
+}
+#music-background div img{
+    height: 65px;
+    width: 60px;
+    object-fit: cover;
+}
+#inner-div-one{
+    margin-top: 1rem;
+    margin-left: -11rem;
+}
+#inner-div-one span{
+    margin-right: 3rem;
+
+}
+#inner-div-three{
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+}
+#inner-div-three i{
+    margin-right: 3rem;
+}
+
+
+
+
+

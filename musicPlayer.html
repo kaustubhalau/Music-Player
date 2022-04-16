@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/118e1c1e71.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="musicPlayer.css">
+    <title>Music Player</title>
+    
+
+</head>
+<body>
+
+    <!------------------------------------------------------ Body Header------------------------------------ -->
+    <header id="body-header">
+        <div id="headerDiv-flex">
+
+            <div id="headerInnerDiv_one"> 
+                <div>           
+                <i class="fa-solid fa-music"></i>
+                <span>Ninja <br> Studio</span>
+                </div>
+                <span>Favourites</span>
+            </div>
+
+            <div id="headerInnerDiv_two">
+
+                <div id="search-icons">    
+                   <i class="fa-solid fa-magnifying-glass"></i>
+                   <input type="text"  placeholder="Search">
+                   <i class="fa-solid fa-microphone"></i>
+                </div>   
+                <span id="headerThird-icon"><i class="fa-solid fa-bell"></i></span>
+                <img src="Image/myImage.jpeg">
+            </div>        
+        </div>
+    </header>
+<!------------------------------- Main including corousel and all the music -------------------------------------->
+    <div id="main-div">
+    <main>
+        <section id="corousel"> 
+            <div id="slider">
+                
+                <input type="radio" name="slider" id="s1">
+                    <input type="radio" name="slider" id="s2">
+                        <input type="radio" name="slider" id="s3" checked>
+                            <input type="radio" name="slider" id="s4">
+                                <input type="radio" name="slider" id="s5">
+
+                <label for="s1" id="slide1">
+                    <img src="Image/michaelJacksonPoster_2.jpg">
+
+                </label>
+
+                <label for="s2" id="slide2">
+                    <img src="Image/TheWeekndPoster_3.jpg">
+
+                </label>
+
+                <label for="s3" id="slide3">
+                    <img src="Image/suryanshiPoster_1.jpg">
+
+                </label>
+
+                <label for="s4" id="slide4">
+                    <img src="Image/charliePuthPoster_5.jpg">
+
+                </label>
+    
+                <label for="s5" id="slide5">
+                    <img src="Image/TaylorSwiftPoster4.jpg">
+
+                </label> 
+            </div>
+        </section>
+
+        <section id="latest-releases">
+            <h3>Latest Releases</h3>
+
+
+            <div class="latest-releases">
+                <div class="latest-release-songs">
+                    <div class="latest-release-image">
+                        <img src="Image/charliePuthLatestReleaseSongs.jpg">
+                    </div>
+                    <div class="latest-release-info">
+                        <span class="name-white">We Don't talk<br>any More</span>
+                        <br>
+                        <br>
+                        <span class="date-grey">25 Jan 2019</span>
+                        
+                    </div>
+                </div>
+
+
+                <div class="latest-release-songs">
+                    <div class="latest-release-image">
+                        <img src="Image/latestReleasesFinfYouNickJonas.jpe">
+                    </div>
+                    <div class="latest-release-info">
+                        <span class="name-white">Find you</span>
+                        <br>
+                        <br>
+                        <span class="date-grey">11 Aug 2022</span>
+                        
+                    </div>
+                </div>
+
+                <div class="latest-release-songs">
+                    <div class="latest-release-image">
+                        <img src="Image/arianaGrandeLAtestReleaseSong.jpe">
+                    </div>
+                    <div class="latest-release-info">
+                        <span class="name-white">Million night</span>
+                        <br>
+                        <br>
+                        <span class="date-grey">16 Dec 2017</span>
+                        
+                    </div>
+                </div>
+
+                <div class="latest-release-songs">
+                    <div class="latest-release-image">
+                        <img src="Image/latestReleasesIamNotAfraidAnyMore.jpg">
+                    </div>
+                    <div class="latest-release-info">
+                        <span class="name-white">Wolf come's out</span>
+                        <br>
+                        <br>
+                        <span class="date-grey">21 Mar 2018</span>
+                        
+                    </div>
+                </div>
+
+                <div class="latest-release-songs">
+                    <div class="latest-release-image">
+                        <img src="Image/LatestReleasesPitbull_-_Give_Me_Everything.jpg">
+                    </div>
+                    <div class="latest-release-info">
+                        <span class="name-white">Give me every<br>thing</span>
+                        <br>
+                        <br>
+                        <span class="date-grey">14 Sep 2015</span>
+                        
+                    </div>
+                </div>
+
+                <div class="latest-release-songs">
+                    <div class="latest-release-image">
+                        <img src="Image/taylorSwaiftblankSpaceLatestRelease.jpg">
+                    </div>
+                    <div class="latest-release-info">
+                        <span class="name-white">Bland Space</span>
+                        <br>
+                        <br>
+                        <span class="date-grey">8 Jul 2016</span>
+                        
+                    </div>
+                </div>
+
+
+            </div>    
+
+        </section>
+           
+
+        <section id="popular-artist">
+            <h3>Popular Artist</h3>
+
+
+            <div class="popular-artist-face border-radius" >
+                <div>
+                    <img src="Image/adam-levine_FaceArtistImage.jpg">
+                    <p>Adam Levine</p>
+                </div>
+                <div>
+                    <a href="charliePuth.html">
+                    <img src="Image/charliePuthArtistFaceImage.jpg">
+                    </a>
+                    <p>Charlie Puth</p>  
+                </div>
+                <div>
+                    <img src="Image/Selena-Gomez-ArtistFaceImages.jpg">
+                    <p>Selena Gomez</p>
+                </div>
+                <div>
+                    <img src="Image/weekend_artistfaceImages.jpg">
+                    <p>The Weekend</p>
+                </div>
+                <div>
+                    <img src="Image/Shawn-Mendes_FaceArtistImage.jpg">
+                    <p>Shawn Mendez</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="juke-box">
+            
+            <div class="juke-box-outter-div border-radius">
+                
+                <div>
+                    <img src="Image/jukeBox.PNG">
+                </div>
+                <div>
+                    <img src="Image/chillIcon.jpg">
+                </div>
+                <div>
+                    <img src="Image/loveIcon.jpg">
+                    <p>Romantic</p>
+                </div>
+                <div>
+                    <img src="Image/popIcon.jpe">
+                    <p>Pop</p>
+                </div>
+                <div>
+                    <img src="Image/retroIcon.jpe">
+                </div>
+                <div>
+                    <img src="Image/rockIcon.jpe">
+                    <p>Rock</p>
+                </div>
+                <div>
+                    <img src="Image/workOutIcon.jpe">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="biggerSquare-MusicType">
+            <div class="three-squares-music">
+                <div>
+                    <img src="Image/Electronic-Music.jpg">
+                    <p>Electronic</p>
+                </div>
+                <div>
+                    <img src="Image/road-trip.jpg">
+                    <p>Road Trip</p>
+                </div>
+                <div>
+                    <img src="Image/PartyMusic.jpe">
+                    <p>Party</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="latest-englishSongs">
+            <h3>Latest English Release</h3>
+
+            <div class="outter-div">
+                <div>
+                    <img src="Image/capitalLettersLatestReleases.jpg">
+                    <p>Capital Letters</p>
+                    
+                </div>
+                <div>
+                    <img src="Image/charliePuthLatestReleaseSongs.jpg">
+                    <p>We don't talk<br>any more</p>
+                    
+                </div>
+                <div>
+                    <img src="Image/latestReleasesFindYouNickJonas.jpg">
+                    <p>Find You</p>
+                    
+                </div>
+                <div>
+                    <img src="Image/taylorSwaiftblankSpaceLatestRelease.jpg">
+                    <p>Blank Space</p>
+                    
+                </div>
+                <div>
+                    <img src="Image/latestReleasesIamNotAfraidAnyMore.jpg">
+                    <p>Love Me Like You<br>Do</p>
+                </div>
+                <div>
+                    <img src="Image/Selena-Gomez-ArtistFaceImages.jpg">
+                    <p>Darky Diamond</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="latest-hindiSongs">
+
+            <h3>Latest Hindi songs</h3>
+
+            <div class="outter-div">
+                <div>
+                    <img src="Image/HindSongsDiljit.jpg">
+                    <p>G.O.A.T</p>
+                    
+                </div>
+                <div>
+                    <img src="Image/Honey_SinghBrownRangHindiSong.jpg">
+                    <p>Brown Rang</p>
+                    
+                </div>
+                <div>
+                    <img src="Image/filhaalHindiSong.jpg">
+                    <p>Naa Jaa</p>
+                    
+                </div>
+                <div>
+                    <img src="Image/kitneArmaanHindiSong.jpg">
+                    <p>Kitne Armaan</p>
+                    
+                </div>
+                <div>
+                    <img src="Image/mehandiHindiSong.jpg">
+                    <p>Mehandi</p>
+                </div>
+                <div>
+                    <img src="Image/tuMeriAdhooriHindiSongs.jpg">
+                    <p>Darky Diamond</p>
+                </div>
+
+            </div>
+
+        </section>
+    
+    </main>  
+
+    <!------------------------------- Aside Section of web page----------------------------------------------->
+    <aside id="queue">
+          
+        <div>
+            <div id="heading">
+                <h3>Queue</h3>
+                <h5>
+                    Options
+                    <i class="fa-solid fa-angle-down"></i>
+                </h5>
+            </div>
+            <div class="aside-songList">
+                <div class="list-numbers">01</div>
+
+                <div style="display: flex;">
+                    <img src="Image/Bruno_Mars_faceImage.jpe">
+                    <span class="song-name">We don't talk<br>any more</span>
+                </div>
+                
+                
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+
+            </div>
+            <div class="aside-songList">
+                <div class="list-numbers">02</div>
+
+                <div style="display: flex;">
+                    <img src="Image/charliePuthLatestReleaseSongs.jpg">
+                    <span class="song-name">We don't talk<br>any more</span>
+                </div>
+                
+                
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+
+            </div>
+            <div class="aside-songList">
+                <div class="list-numbers">03</div>
+
+                <div style="display: flex;">
+                    <img src="Image/arianaGrandeLAtestReleaseSong.jpe">
+                    <span class="song-name">We don't talk<br>any more</span>
+                </div>
+                
+                
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+
+            </div>
+            <div class="aside-songList">
+                <div class="list-numbers">04</div>
+
+                <div style="display: flex;">
+                    <img src="Image/Honey_SinghBrownRangHindiSong.jpg">
+                    <span class="song-name">We don't talk<br>any more</span>
+                </div>
+                
+                
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+
+            </div>
+            <div class="aside-songList">
+                <div class="list-numbers">05</div>
+
+                <div style="display: flex;">
+                    <img src="Image/taylorSwaiftblankSpaceLatestRelease.jpg">
+                    <span class="song-name">We don't talk<br>any more</span>
+                </div>
+                
+                
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+
+            </div>
+            <div class="aside-songList">
+                <div class="list-numbers">06</div>
+
+                <div style="display: flex;">
+                    <img src="Image/chillIcon.jpg">
+                    <span class="song-name">We don't talk<br>any more</span>
+                </div>
+                
+                
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+
+            </div>
+            <div class="aside-songList">
+                <div class="list-numbers">07</div>
+
+                <div style="display: flex;">
+                    <img src="Image/filhaalHindiSong.jpg">
+                    <span class="song-name">We don't talk<br>any more</span>
+                </div>
+                
+                
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+
+            </div>
+            <div class="aside-songList">
+                <div class="list-numbers">08</div>
+
+                <div style="display: flex;">
+                    <img src="Image/tuMeriAdhooriHindiSongs.jpg">
+                    <span class="song-name">We don't talk<br>any more</span>
+                </div>
+                
+                
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+
+            </div>
+            <div class="aside-songList">
+                <div class="list-numbers">08</div>
+
+                <div style="display: flex;">
+                    <img src="Image/workOutIcon.jpe">
+                    <span class="song-name">We don't talk<br>any more</span>
+                </div>
+                
+                
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+
+            </div>
+            <div class="aside-songList">
+                <div class="list-numbers">09</div>
+
+                <div style="display: flex;">
+                    <img src="Image/suryanshiPoster_1.jpg">
+                    <span class="song-name">We don't talk<br>any more</span>
+                </div>
+                
+                
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+
+            </div>
+            <div class="aside-songList">
+                <div class="list-numbers">10</div>
+
+                <div style="display: flex;">
+                    <img src="Image/Shawn-Mendes_FaceArtistImage.jpg">
+                    <span class="song-name">We don't talk<br>any more</span>
+                </div>
+                
+                
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+
+            </div>
+            
+           
+
+        </div>
+
+    </aside> 
+    </div>  
+
+    <!----------------------- Bottom Audio Player --------------------------->
+
+
+    <section id="music-background">
+        <div id="outter-div">
+            
+            <img src="Image/capitalLettersLatestReleases.jpg">
+            <div id="inner-div-one">    
+                <span id="song-playing-title">Cappital Letter</span>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            
+            <div id="inner-div-two">
+                <audio src="Music/Hailee Steinfeld, BloodPop® - Capital Letters.mp3" controls type="audio/mp3"></audio>
+            </div>
+            <div id="inner-div-three">
+                <i class="fa-solid fa-align-justify"></i>
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-arrows-rotate"></i>
+                <i class="fa-solid fa-forward-fast"></i>
+            </div>
+        
+        </div>
+    </section>
+    
+
+</body>
+</html>
